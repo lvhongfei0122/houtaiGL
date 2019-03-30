@@ -1,0 +1,48 @@
+/*导航*/
+
+/*数据统计和网站热帖*/
+#shuju{
+	width:100%;
+	padding:20px 0px;
+	margin-top: 50px;
+}
+/*访客统计和服务器状态*/
+
+/*留言板*/
+#liuyan  .zuo{
+	width:100%;
+	height:140px;
+	background: #e7e7e7;
+}
+#liuyan .zuo img{
+	float:left;
+	margin:15px 0px 15px 15px;
+}
+#liuyan .zuo p{
+	float: left;
+	margin:15px 0px 15px 15px;
+	line-height: 25px;
+}
+#liuyan  .you{
+	width:100%;
+	height:140px;
+	background: #e7e7e7;
+	margin:20px 0px ;
+}
+#liuyan .you img{
+	float:right;
+	margin:15px 15px 0px 15px;
+}
+#liuyan .you p{
+	float: right;
+	margin:15px 15px 0px 15px;
+	line-height: 25px;
+	text-align: right;
+}
+#liuyan .lx{
+	margin-top: 10px;
+}
+/*底部*/
+footer{
+	text-align: center;
+}

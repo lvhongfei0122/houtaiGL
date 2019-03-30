@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户管理</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+		<script src='js/html5shiv.js'> </script>
+		<script src='js/response.min.js'></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/yonghu.css" />
+	</head>
+	<body>
+		<!--导航-->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id='nav'>
+			<div class="container">
+			    <div class="navbar-header">
+			    	<a class="navbar-brand" href="#">后台管理</a>
+			    	<!--屏幕缩小显示，面包屑按钮-->
+			        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navba">
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+			    </div>
+
+			    <div class="collapse navbar-collapse" id="navba">
+			    	<ul class='nav navbar-nav'>
+			    		<li><a href="index.html"><span class='glyphicon glyphicon-home'></span>&nbsp;&nbsp;后台首页</a></li>
+			    		<li><a href="yonghu.html"><span class='glyphicon glyphicon-user'></span>&nbsp;&nbsp;用户管理</a></a></li>
+			    		<li><a href="neirong.html"><span class='glyphicon glyphicon-list-alt'></span>&nbsp;&nbsp;内容管理</a></a></li>
+			    		<li><a href="biaoqian.html"><span class='glyphicon glyphicon-tags'></span>&nbsp;&nbsp;标签管理</a></a></li>
+			    	</ul>
+			        <ul class="nav navbar-nav navbar-right">
+			            <li>
+			            	<a href=""  class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			      				admin <span class="caret"></span>
+			            	</a>
+			            	<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+							    <li><a href="#"><span class='glyphicon glyphicon-screenshot'></span>&nbsp;&nbsp;前台首页</a></li>
+							    <li><a href="#"><span class='glyphicon glyphicon-user'></span>&nbsp;&nbsp;个人主页</a></li>
+							    <li><a href="#"><span class='glyphicon glyphicon-cog'></span>&nbsp;&nbsp;个人设置</a></li>
+							    <li><a href="#"><span class='glyphicon glyphicon-credit-card'></span>&nbsp;&nbsp;账户中心</a></li>
+							    <li><a href="#"><span class='glyphicon glyphicon-heart'></span>&nbsp;&nbsp;我的收藏</a></li>
+						  	</ul>
+			            	
+			            </li>
+			            <li><a href=""><span class='glyphicon glyphicon-off'></span>&nbsp;&nbsp;退出</a></li>
+			        </ul>
+			    </div>
+		   </div>
+		</nav>
+		<!--主体-->
+		<section id='zhuti'>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="list-group">
+						  <a href="#home" data-toggle="tab" class="list-group-item active">
+						    用户管理
+						  </a>
+						  <a href="#ios" data-toggle="tab" class="list-group-item">用户搜索</a>
+						  <a href="#add" data-toggle="modal"  class="list-group-item" data-target="#add">添加用户</a>
+						  </div>
+					</div>
+					<div class="col-md-10">
+						<p >用户管理</p>
+						<ul id="myTab" class="nav nav-tabs">
+							<li class="active">
+								<a href="#home" data-toggle="tab">用户列表</a>
+							</li>
+							<li><a href="#ios" data-toggle="tab">用户搜索</a></li>
+							<li>
+								<a href="#add"   data-toggle="modal" data-target="#add">添加用户</a>
+							</li>
+						</ul>
+						<div id="myTabContent" class="tab-content">
+							
+							<!--用户列表-->
+							<div class="tab-pane fade in active" id="home">
+								 <table class="table table-hover">
+		                        <thead>
+		                            <tr>
+		                                <th>ID</th>
+		                                <th>用户名</th>
+		                                <th>邮箱</th>
+		                                 <th>操作</th>
+		                            </tr>
+		                        </thead>
+		                        <tbody>
+		                            <tr>
+		                                 <th scope="row">1</th>
+		                                 <td>张三</td>
+		                                 <td>123456789@qingruan.com</td>
+		                                 <td>
+		                                 	<div class="dropdown">
+											  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											 	操作
+											    <span class="caret"></span>
+											  </button>
+											  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+											    <li><a href="#">编辑</a></li>
+											    <li><a href="#">删除</a></li>
+											    <li><a href="#">锁定</a></li>
+											    <li><a href="#">修改密码</a></li>
+											  </ul>
+											</div>
+		                                 </td>
+		                            </tr>
+		                            <tr>
+		                                 <th scope="row">2</th>
+		                                 <td>张三</td>
+		                                 <td>123456789@qingruan.com</td>
+		                                 <td>
+		                                 	<div class="dropdown">
+											  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											 	操作
+											    <span class="caret"></span>
+											  </button>
+											  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+											    <li><a href="#">编辑</a></li>
+											    <li><a href="#">删除</a></li>
+											    <li><a href="#">锁定</a></li>
+											    <li><a href="#">修改密码</a></li>
+											  </ul>
+											</div>
+		                                 </td>
+		                            </tr>
+		                            <tr>
+		                                 <th scope="row">3</th>
+		                                 <td>张三</td>
+		                                 <td>123456789@qingruan.com</td>
+		                                 <td>
+		                                 	<div class="dropdown">
+											  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											 	操作
+											    <span class="caret"></span>
+											  </button>
+											  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+											    <li><a href="#">编辑</a></li>
+											    <li><a href="#">删除</a></li>
+											    <li><a href="#">锁定</a></li>
+											    <li><a href="#">修改密码</a></li>
+											  </ul>
+											</div>
+		                                 </td>
+		                            </tr>
+		                            <tr>
+		                                 <th scope="row">4</th>
+		                                 <td>张三</td>
+		                                 <td>123456789@qingruan.com</td>
+		                                 <td>
+		                                 	<div class="dropdown">
+											  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											 	操作
+											    <span class="caret"></span>
+											  </button>
+											  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+											    <li><a href="#">编辑</a></li>
+											    <li><a href="#">删除</a></li>
+											    <li><a href="#">锁定</a></li>
+											    <li><a href="#">修改密码</a></li>
+											  </ul>
+											</div>
+		                                 </td>
+		                            </tr>
+		                            <tr>
+		                                 <th scope="row">5</th>
+		                                 <td>张三</td>
+		                                 <td>123456789@qingruan.com</td>
+		                                 <td>
+		                                 	<div class="dropdown">
+											  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											 	操作
+											    <span class="caret"></span>
+											  </button>
+											  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+											    <li><a href="#">编辑</a></li>
+											    <li><a href="#">删除</a></li>
+											    <li><a href="#">锁定</a></li>
+											    <li><a href="#">修改密码</a></li>
+											  </ul>
+											</div>
+		                                 </td>
+		                            </tr>
+		                            <tr>
+		                                 <th scope="row">6</th>
+		                                 <td>张三</td>
+		                                 <td>123456789@qingruan.com</td>
+		                                 <td>
+		                                 	<div class="dropdown">
+											  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											 	操作
+											    <span class="caret"></span>
+											  </button>
+											  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+											    <li><a href="#">编辑</a></li>
+											    <li><a href="#">删除</a></li>
+											    <li><a href="#">锁定</a></li>
+											    <li><a href="#">修改密码</a></li>
+											  </ul>
+											</div>
+		                                 </td>
+		                            </tr>
+		                            <tr>
+		                                 <th scope="row">7</th>
+		                                 <td>张三</td>
+		                                 <td>123456789@qingruan.com</td>
+		                                 <td>
+		                                 	<div class="dropdown">
+											  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											 	操作
+											    <span class="caret"></span>
+											  </button>
+											  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+											    <li><a href="#">编辑</a></li>
+											    <li><a href="#">删除</a></li>
+											    <li><a href="#">锁定</a></li>
+											    <li><a href="#">修改密码</a></li>
+											  </ul>
+											</div>
+		                                 </td>
+		                            </tr>
+		                            <tr>
+		                                 <th scope="row">8</th>
+		                                 <td>张三</td>
+		                                 <td>123456789@qingruan.com</td>
+		                                 <td>
+		                                 	<div class="dropdown">
+											  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											 	操作
+											    <span class="caret"></span>
+											  </button>
+											  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+											    <li><a href="#">编辑</a></li>
+											    <li><a href="#">删除</a></li>
+											    <li><a href="#">锁定</a></li>
+											    <li><a href="#">修改密码</a></li>
+											  </ul>
+											</div>
+		                                 </td>
+		                            </tr>
+		                            <tr>
+		                                 <th scope="row">9</th>
+		                                 <td>张三</td>
+		                                 <td>123456789@qingruan.com</td>
+		                                 <td>
+		                                 	<div class="dropdown">
+											  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											 	操作
+											    <span class="caret"></span>
+											  </button>
+											  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+											    <li><a href="#">编辑</a></li>
+											    <li><a href="#">删除</a></li>
+											    <li><a href="#">锁定</a></li>
+											    <li><a href="#">修改密码</a></li>
+											  </ul>
+											</div>
+		                                 </td>
+		                            </tr>
+		                            <tr>
+		                                 <th scope="row">10</th>
+		                                 <td>张三</td>
+		                                 <td>123456789@qingruan.com</td>
+		                                 <td>
+		                                 	<div class="dropdown">
+											  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											 	操作
+											    <span class="caret"></span>
+											  </button>
+											  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+											    <li><a href="#">编辑</a></li>
+											    <li><a href="#">删除</a></li>
+											    <li><a href="#">锁定</a></li>
+											    <li><a href="#">修改密码</a></li>
+											  </ul>
+											</div>
+		                                 </td>
+		                            </tr>
+		                            
+		                            
+		                        </tbody>
+		                    </table>
+		                    <div class="row">
+		                    	<div class="col-md-8"></div>
+		                    	<div class="col-md-4">
+								  <ul class="pagination">
+								    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+								    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+								     <li><a href="#">2</a></li>
+								    <li><a href="#">3</a></li>
+								    <li><a href="#">4</a></li>
+								    <li><a href="#">5</a></li>
+								    <li><a href="#">6</a></li>
+								    <li>
+								      <a href="#" aria-label="Next">
+								        <span aria-hidden="true">&raquo;</span>
+								      </a>
+								    </li>
+								  </ul>
+								</div>
+							</div>
+							</div>
+							<!--用户搜索-->
+							<div class="tab-pane fade" id="ios">
+								<div class='panel panel-default'>
+								<div class="panel-body">
+								<div class="alert alert-info" role="alert">技巧提示：支持模糊搜索和匹配搜索，匹配搜索使用*代替！</div>
+								<form action="#">
+								<div class="form-group">
+								   <label for="username">用户名</label>
+								   <input type="text" class="form-control" id="username" placeholder="请输入用户名">
+								</div>
+								<div class="form-group">
+								   <label for="username">UID</label>
+								   <input type="password" class="form-control" id="userpwd" placeholder="输入用户UID">
+								</div>
+								<div class="form-group">
+								   <label for="username">选择用户组</label>
+								   <select class="form-control">
+									  <option>限制会员</option>
+									  <option>新手上路</option>
+									  <option>组册会员</option>
+									  <option>中级会员</option>
+									  <option>高级会员</option>
+									</select>
+								</div>
+								<input type="submit" value='提交' class='btn btn-default'/>
+								</form>
+								</div>
+								</div>
+							</div>
+							<!--添加用户/模态框-->	
+							<div class="modal fade" id="add" aria-hidden="true">
+							    <div class="modal-dialog">
+							        <div class="modal-content">
+							            <div class="modal-header">
+							                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							                <h4 class="modal-title" id="myModalLabel">添加用户</h4>
+							            </div>
+							            
+							            <div class="modal-body">
+										 	<form action="#">
+							                    <div class="form-group">
+							                        <label for="addname">用户名</label>
+							                        <input type="text" id="addname" class="form-control" placeholder="用户名">
+							                    </div>
+							                    <div class="form-group">
+							                        <label for="addpassword">用户密码</label>
+							                        <input type="text" id="addpassword" class="form-control" placeholder="请输入用户密码">
+							                    </div>
+							                     <div class="form-group">
+							                        <label for="addpassword">确认用户密码</label>
+							                        <input type="text" id="addpassword" class="form-control" placeholder="请确认输入用户密码">
+							                    </div>
+							                    <div class="form-group">
+							                        <label for="addpassword">请输入用户邮箱</label>
+							                        <input type="text" id="addpassword" class="form-control" placeholder="请输入用户邮箱">
+							                    </div>
+							                    <div class="form-group">
+												   <label for="username">选择用户组</label>
+												   <select class="form-control">
+													  <option>限制会员</option>
+													  <option>新手上路</option>
+													  <option>组册会员</option>
+													  <option>中级会员</option>
+													  <option>高级会员</option>
+													</select>
+												</div>
+							                </form>
+							            </div>
+							            
+							            <div class="modal-footer">
+							                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							                <button type="button" class="btn btn-success">提交</button>
+							            </div>
+							        </div>
+							    </div>
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--底部-->
+		<footer>
+			<p>CopyRight&nbsp;&nbsp;&copy;&nbsp;&nbsp;2018-2019&nbsp;&nbsp;www.qingruan.com&nbsp;&nbsp;ICP备案xxxx号-4</p>
+		</footer>
+		<script src='js/jquery-1.9.1.min.js'></script>
+		<script src='js/bootstrap.min.js'></script>
+		<script>
+	$(function () {
+		$('#myTab li:eq(0) a').tab('show');
+	});
+</script>
+	</body>
+</html>

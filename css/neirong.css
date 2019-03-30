@@ -1,0 +1,23 @@
+/*主体*/
+#zhuti{
+	width:100%;
+	padding:20px 0px;
+	margin-top: 50px;
+}
+#zhuti .row .col-md-10>p{
+	line-height: 35px;
+	border-bottom: 1px solid #e7e7e7;
+}
+#add{
+	padding:10px 0px;
+}
+#zhuti #add .checkbox{
+	display: inline-block;
+	float: left;
+}
+#zhuti #add input{
+	float: right;
+}
+footer{
+	text-align: center;
+}

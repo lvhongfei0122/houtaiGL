@@ -1,0 +1,13 @@
+/*主体*/
+#zhuti{
+	width:100%;
+	padding:20px 0px;
+	margin-top: 50px;
+}
+#zhuti .row .col-md-10>p{
+	line-height: 35px;
+	border-bottom: 1px solid #e7e7e7;
+}
+footer{
+	text-align: center;
+}
